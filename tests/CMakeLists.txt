@@ -2,7 +2,7 @@
 include(${PROJECT_SOURCE_DIR}/cmake/CompilerWarnings.cmake)
 
 # Test executable
-add_executable(${PROJECT_NAME}_tests
+add_executable(__CMAKE_reee___tests
     test_example.cpp
 )
 
@@ -15,18 +15,18 @@ else()
     set(CATCH2_VERSION 2)
 endif()
 
-target_link_libraries(${PROJECT_NAME}_tests
+target_link_libraries(__CMAKE_reee___tests
     PRIVATE
-        ${PROJECT_NAME}::lib
+        __CMAKE_reee__::lib
         ${CATCH2_TARGET}
         gmock
 )
 
 # Pass Catch2 version to source code for conditional includes
-target_compile_definitions(${PROJECT_NAME}_tests PRIVATE CATCH2_VERSION=${CATCH2_VERSION})
+target_compile_definitions(__CMAKE_reee___tests PRIVATE CATCH2_VERSION=${CATCH2_VERSION})
 
 # Apply strict warnings to this target only
-set_project_warnings(${PROJECT_NAME}_tests)
+set_project_warnings(__CMAKE_reee___tests)
 
 # Enable CTest support
 include(CTest)
@@ -40,4 +40,4 @@ elseif(EXISTS "${Catch2_SOURCE_DIR}/contrib")
 endif()
 
 include(Catch)
-catch_discover_tests(${PROJECT_NAME}_tests)
+catch_discover_tests(__CMAKE_reee___tests)

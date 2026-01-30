@@ -10,9 +10,9 @@
 
 #include <gmock/gmock.h>
 
-#include "PROJECT_NAME_LOWER/example.h"
+#include "reee/example.h"
 
-using namespace PROJECT_NAME_LOWER;
+using namespace reee;
 using ::testing::Return;
 using ::testing::_;
 

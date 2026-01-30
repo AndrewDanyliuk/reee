@@ -48,9 +48,9 @@ endif()
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 set(CMAKE_CXX_EXTENSIONS OFF)
 
-project(PROJECT_NAME_CAMEL
+project(Reee
     VERSION 1.0.0
-    DESCRIPTION "PROJECT_NAME_CAMEL C++ Project"
+    DESCRIPTION "Reee C++ Project"
     LANGUAGES CXX
 )
 
@@ -229,7 +229,7 @@ endif()
 
 message(STATUS "")
 message(STATUS "========================================")
-message(STATUS "  ${PROJECT_NAME} Configuration Summary")
+message(STATUS "  __CMAKE_reee__ Configuration Summary")
 message(STATUS "========================================")
 message(STATUS "C++ Standard:         ${CMAKE_CXX_STANDARD}")
 message(STATUS "Build Type:           ${CMAKE_BUILD_TYPE}")

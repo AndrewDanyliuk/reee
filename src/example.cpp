@@ -1,6 +1,6 @@
-#include "PROJECT_NAME_LOWER/example.h"
+#include "reee/example.h"
 
-namespace PROJECT_NAME_LOWER {
+namespace reee {
 
 Example::Example(int value) : value_(value) {}
 
@@ -20,4 +20,4 @@ int Example::add(int amount)
     return value_;
 }
 
-}  // namespace PROJECT_NAME_LOWER
+}  // namespace reee

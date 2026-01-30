@@ -1,4 +1,4 @@
-# PROJECT_NAME_CAMEL
+# Reee
 
 A modern C++ project template with comprehensive tooling support.
 
@@ -161,7 +161,7 @@ ctest --test-dir build --output-on-failure
 ## Project Structure
 
 ```
-PROJECT_NAME/
+reee/
 ├── CMakeLists.txt           # Main build configuration
 ├── CMakePresets.json        # CMake preset definitions
 ├── cmake.options            # Quick configuration (optional)
@@ -179,7 +179,7 @@ PROJECT_NAME/
 │   ├── CPM.cmake           # CPM package manager
 │   └── PreventInSourceBuilds.cmake
 ├── include/                # Public headers
-│   └── PROJECT_NAME_LOWER/
+│   └── reee/
 │       └── example.h
 ├── src/                    # Implementation files
 │   ├── CMakeLists.txt
@@ -237,7 +237,7 @@ Create test files in `tests/` directory:
 
 ```cpp
 #include <catch2/catch_test_macros.hpp>
-#include "PROJECT_NAME_LOWER/example.h"
+#include "reee/example.h"
 
 TEST_CASE("My test", "[tag]")
 {
@@ -323,7 +323,7 @@ ctest --preset linux-clang-coverage
 llvm-profdata merge -sparse default.profraw -o default.profdata
 
 # Generate HTML report
-llvm-cov show ./build/linux-clang-coverage/tests/PROJECT_NAME_tests \
+llvm-cov show ./build/linux-clang-coverage/tests/reee_tests \
   -instr-profile=default.profdata \
   -format=html \
   -output-dir=coverage \
@@ -448,7 +448,7 @@ Options: `none`, `awesome`, `awesome-sidebar`
 Edit `src/CMakeLists.txt`:
 
 ```cmake
-add_library(${PROJECT_NAME}_lib
+add_library(__CMAKE_reee___lib
     example.cpp
     new_file.cpp  # Add here
 )
@@ -469,7 +469,7 @@ TEST_CASE("New feature test", "[new]")
 
 2. Edit `tests/CMakeLists.txt`:
 ```cmake
-add_executable(${PROJECT_NAME}_tests
+add_executable(__CMAKE_reee___tests
     test_example.cpp
     test_new_feature.cpp  # Add here
 )
@@ -488,7 +488,7 @@ CPMAddPackage(
     VERSION 3.11.3
 )
 
-target_link_libraries(${PROJECT_NAME}_lib
+target_link_libraries(__CMAKE_reee___lib
     PUBLIC
         fmt::fmt
         nlohmann_json::nlohmann_json

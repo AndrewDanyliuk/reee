@@ -1,7 +1,7 @@
-#ifndef PROJECT_NAME_UPPER_EXAMPLE_H
-#define PROJECT_NAME_UPPER_EXAMPLE_H
+#ifndef REEE_EXAMPLE_H
+#define REEE_EXAMPLE_H
 
-namespace PROJECT_NAME_LOWER {
+namespace reee {
 
 /**
  * @brief A simple example class demonstrating basic functionality
@@ -38,6 +38,6 @@ private:
     int value_;
 };
 
-}  // namespace PROJECT_NAME_LOWER
+}  // namespace reee
 
-#endif  // PROJECT_NAME_UPPER_EXAMPLE_H
+#endif  // REEE_EXAMPLE_H
